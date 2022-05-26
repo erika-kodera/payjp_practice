@@ -1,5 +1,6 @@
 <%= form_with  model: @order, id: 'charge-form', class: 'card-form', local: true do |f| %>
-  <div class='form wrap'>
+<%= <%= render 'layouts/error_messages', model: @order %>%>
+  <div class='form-wrap'>
   <%= f.label :price, "金額" %>
   <%= f.text_field :price, class:"price", placeholder:"例)2000" %>
   </div>
